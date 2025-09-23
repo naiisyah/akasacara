@@ -1,4 +1,5 @@
 import React from 'react';
+import Announcements from '@/components/Announcements';
 
 const Beranda = () => {
   return (
@@ -8,7 +9,9 @@ const Beranda = () => {
       {/* END SHOWREEL */}
 
       {/* START ANNOUNCEMENT */}
-      <section className="announcement"></section>
+      <section className="announcement">
+        <Announcements/>
+      </section>
       {/* END ANNOUNCEMENT */}
 
       {/* START OUR WORK */}
