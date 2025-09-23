@@ -1,4 +1,37 @@
 import { div } from "framer-motion/client";
+import OurWorkCard from "@/components/OurWorkPageCard";
+
+const ourWork = [
+  {
+    id: 1,
+    title:
+      "GANYANG SETAN ALAS",
+    description: "Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films,",
+    image: "/placeholder.png",
+  },
+  {
+    id: 2,
+    title:
+      "GANYANG SETAN ALAS",
+    description: "Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films,",
+    image: "/placeholder.png",
+  },
+  {
+    id: 3,
+    title:
+      "GANYANG SETAN ALAS",
+    description: "Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films,",
+    image: "/placeholder.png",
+  },
+  {
+    id: 4,
+    title:
+      "GANYANG SETAN ALAS",
+    description: "Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films,",
+    image: "/placeholder.png",
+  },
+  
+];
 
 const OurWork = () => {
   return (
@@ -8,52 +41,31 @@ const OurWork = () => {
         <div className="text-center mb-12">
             <ul className="flex justify-center space-x-6 font-medium">
                 <div>
-                    <li className="hover:italic font-semibold">Film Production</li>
+                    <li className="hover:italic hover:underline font-semibold">Film Production</li>
                 </div>
                 <div>
-                    <li>Animation</li>
+                    <li className="hover:italic hover:underline font-semibold">Animation</li>
                 </div>
                 <div>
-                    <li>Game</li>
+                    <li className="hover:italic hover:underline font-semibold">Game</li>
                 </div>
                  <div>
-                    <li>Fisik</li>
+                    <li className="hover:italic hover:underline font-semibold">Fisik</li>
                 </div>
             </ul>
         </div>
 
         {/* DAFTAR OUR WORKS */}
         <section className="px-8 md:px-20 space-y-12">
-            <div className="flex flex-col md:flex-row items-center md:space-x-8">
-                <img src="/assets/GanyangSetanAlas.jpg" alt="About Us Akasacara" className="flex-1 w-100 h-auto md:w-1/2" />
-                <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2">GANYANG SETAN ALAS</h3>
-                    <p className="font-rubik text-3xl text-black">
-                        Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.
-                        Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films, 
-                    </p>
-                </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center md:space-x-8">
-                <img src="/assets/DarahNyai.png" alt="About Us Akasacara" className="flex-1 w-100 h-auto md:w-1/2" />
-                <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2">GANYANG SETAN ALAS</h3>
-                    <p className="font-rubik text-3xl text-black">
-                        Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.
-                        Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films, 
-                    </p>
-                </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center md:space-x-8">
-                <img src="/assets/GanyangSetanAlas.jpg" alt="About Us Akasacara" className="flex-1 w-100 h-auto md:w-1/2" />
-                <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2">GANYANG SETAN ALAS</h3>
-                    <p className="font-rubik text-3xl text-black">
-                        Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.
-                        Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films, 
-                    </p>
-                </div>
-            </div>
+            {ourWork.map((item) => (
+                <OurWorkCard
+                    key={item.id}
+                    id={item.id}
+                    title={item.title}
+                    description={item.description}
+                    image={item.image}
+                />
+            ))}
         </section>
     </div>
   );
