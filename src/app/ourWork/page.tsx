@@ -35,22 +35,25 @@ const ourWork = [
 
 const OurWork = () => {
   return (
-    <div className="bg-white text-black min-h-screen font-sans">
-        <h1 className="font-plus-jakarta-sans text-6xl text-black text-center mb-8">Our Works</h1>
+    <div className="bg-white text-black min-h-screen font-sans py-[100px]">
+        <h1 className="font-plus-jakarta-sans text-8xl text-center font-[800] uppercase mb-30">Our Works</h1>
         {/* KATEGORI */}
-        <div className="text-center mb-12">
-            <ul className="flex justify-center space-x-6 font-medium">
+        <div className="text-center mb-20">
+            <ul className="flex justify-center space-x-6 font-medium gap-1.5">
                 <div>
-                    <li className="hover:italic hover:underline font-semibold">Film Production</li>
+                    <li className="kategoriourwork font-rubik text-3xl font-[500]">Film Production</li>
                 </div>
+                <div className="font-rubik text-3xl font-[500]">|</div>
                 <div>
-                    <li className="hover:italic hover:underline font-semibold">Animation</li>
+                    <li className="kategoriourwork font-rubik text-3xl font-[500]">Animation</li>
                 </div>
+                <div className="font-rubik text-3xl font-[500]">|</div>
                 <div>
-                    <li className="hover:italic hover:underline font-semibold">Game</li>
+                    <li className="kategoriourwork font-rubik text-3xl font-[500]">Game</li>
                 </div>
-                 <div>
-                    <li className="hover:italic hover:underline font-semibold">Fisik</li>
+                <div className="font-rubik text-3xl font-[500]">|</div>
+                <div>
+                    <li className="kategoriourwork font-rubik text-3xl font-[500]">Fisik</li>
                 </div>
             </ul>
         </div>

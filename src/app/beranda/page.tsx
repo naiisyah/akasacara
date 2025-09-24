@@ -18,7 +18,7 @@ const Beranda = () => {
           <img 
             src="/assets/logo.png" 
             alt="Akasacara Film Logo" 
-            className="w-50 h-auto"
+            className="w-64 h-15"
           />
         </div>
       </section>
@@ -59,7 +59,7 @@ const Beranda = () => {
 
       {/* START ABOUTE US */}
       <section className="g-white-100 pt-24 pr-[78px] pb-[78px] pl-[78px] mb-8">
-        <h2 className="font-plus-jakarta-sans text-6xl text-black mb-12">About Us!</h2>
+        <h2 className="font-plus-jakarta-sans text-[60px] font-[800] uppercase mb-12">About Us!</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           <img src="/assets/aboutus.jpg" alt="About Us Akasacara" className="w-full md:w-1/2" />
           <p className="font-rubik text-3xl text-black">
