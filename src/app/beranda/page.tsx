@@ -3,7 +3,7 @@ import Announcements from '@/components/Announcements';
 
 const Beranda = () => {
   return (
-    <div className="bg-white text-black min-h-screen font-sans">
+    <div className="flex flex-col items-start pb-section bg-akasacara">
       {/* START SHOWREEL */}
       <section className="showreel relative w-screen h-screen overflow-hidden">
         <video 
@@ -26,9 +26,7 @@ const Beranda = () => {
       {/* END SHOWREEL */}
 
       {/* START ANNOUNCEMENT */}
-      <section className="announcement">
-        <Announcements/>
-      </section>
+      <Announcements/>
       {/* END ANNOUNCEMENT */}
 
       {/* START OUR WORK */}

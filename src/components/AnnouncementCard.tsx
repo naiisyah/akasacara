@@ -11,8 +11,8 @@ type AnnouncementCardProps = {
 
 export function AnnouncementCard({ id, title, date, image }: AnnouncementCardProps) {
   return (
-    <div className="flex gap-[32px]">
-        <div className="flex-1 h-[342px] bg-gray-200 relative shrink-0">
+    <div className="flex justify-center items-center gap-l self-stretch">
+        <div className="flex-1 aspect-16/9 h-[342px] bg-gray-200">
             <Image
                 src={image}
                 alt={title}
@@ -20,16 +20,14 @@ export function AnnouncementCard({ id, title, date, image }: AnnouncementCardPro
                 className="object-cover rounded"
             />
         </div>
-        <div className="flex-1 flex flex-col gap-[24px]">
-            <div className="flex flex-col gap-[16px]">
-                <h3 className="font-plus-jakarta-sans text-[36px] font-[600] leading-snug">
-                    {title}
-                </h3>
-                <span className="text-[24px] font-[400] text-gray-500 ">{date}</span>
+        <div className="flex-1 flex flex-col items-start gap-md">
+            <div className="flex flex-col items-start gap-m self-stretch">
+                <h3 className="headline-3 aka-text-subtitle-1">{title}</h3>
+                <span className="body-reg aka-text-subtitle-2">{date}</span>
             </div>
             <Link
                 href={`article/${id}`}                
-                className="text-[30px] font-[500] italic hover:underline"
+                className="button-secondary hyperlink-txt"
             >
                 READ MORE →
             </Link>
