@@ -1,14 +1,52 @@
 import React from 'react'
 import Image from 'next/image'
+import ArticleCard from "@/components/ArticleCard";
 
-interface ArticleProps {
-    params: {
-        id: number
-    }
-}
+type ArticleProps = {
+  id: number;
+  title: string;
+  date: string;
+  image: string;
+  link: string;
+};
 
-function article({params}: ArticleProps) {
-    const {id} = params
+const announcements = [
+
+    {
+      id: 1,
+      title:
+        "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
+      date: "21 Januari 2025",
+      image: "/assets/DarahNyai.png",
+      link: "#",
+    },
+    {
+      id: 2,
+      title:
+        "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
+      date: "21 Januari 2025",
+      image: "/assets/DarahNyai.png",
+      link: "#",
+    },
+    {
+      id: 3,
+      title:
+        "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
+      date: "21 Januari 2025",
+      image: "/assets/DarahNyai.png",
+      link: "#",
+    },
+    {
+      id: 4,
+      title:
+        "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
+      date: "21 Januari 2025",
+      image: "/assets/DarahNyai.png",
+      link: "#",
+    },
+]
+
+function article({ id, title, date, image }: ArticleProps) {
   return (
     <div className="pb-[100px] bg-[#FDFDFD]">
         <div className="pb-[100px] h-[810px]">
@@ -48,6 +86,20 @@ function article({params}: ArticleProps) {
                 Film ini menyegarkan kembali legenda dan genre jagal mistik dengan visualisasi 90-an yang dikontemporerkan, membawa isu-isu terkini seperti perdagangan manusia (Human Trafficking) dan Eco-Horror (Horor Ekologis), korupsi, dan kekerasan terhadap perempuan (Femisida).
                 <br /><br />
                 Darah Nyai akan tayang di berbagai kota Indonesia. Walau diputar juga di Jakarta, kami memusatkan perhatian pada penayangan di luar Jakarta seperti Karawang, Bekasi, Yogyakarta, Surabaya, Probolinggo, Cibadak, Pekalongan, Klaten, Ungaran, Sukabumi, Cianjur, Subang, Indramayu, Pemalang, Salatiga, Gombong, Solo, Kediri, Nganjuk, Pasuruan, Cilacap, Kroya, Purwodadi, Brebes, Kudus, Demak, Rembang, Wonosobo, Sengkang, Purwokerto, Kediri, Tulung Agung, Bangka Belitung, Lampung, Denpasar, Pekanbaru, Mataram, Manado, Kotabaru, Poso dan seterusnya.</p>
+        </div>
+        <div className='gap-[48px] p-[100px] flex flex-col'>
+            <div className="font-plus-jakarta-sans text-[40px] font-[600]">Latest Announcements</div>
+            <div className='grid grid-cols-2 gap-[16px]'>
+                {announcements.map((item) => 
+                <ArticleCard
+                    key={item.id}
+                    id={item.id}
+                    title={item.title}
+                    date={item.date}
+                    image={item.image}
+                />
+                )}
+            </div>
         </div>
     </div>
   )
