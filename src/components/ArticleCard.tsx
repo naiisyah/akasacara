@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 type ArticleCardProps = {
   id: number;
@@ -11,23 +10,19 @@ type ArticleCardProps = {
 
 export function ArticleCard({ id, title, date, image }: ArticleCardProps) {
   return (
-    <div className="flex gap-[16px]">
-        <div className="flex-1 h-[168.75px] bg-gray-200 relative shrink-0">
-            <Image
-                src={image}
-                alt={title}
-                fill
-                className="object-cover rounded"
-            />
-        </div>
-        <div className="flex-1 flex flex-col gap-[24px]">
-            <div className="flex flex-col gap-[16px]">
-                <h3 className="font-plus-jakarta-sans text-[24px] font-[500] leading-snug">
-                    {title}
-                </h3>
-                <span className="text-[16px] font-[500] text-black ">{date}</span>
-            </div>
-        </div>
+    <div className="flex flex-1 justify-center items-center gap-m">
+      <div className="flex-1 relative aspect-16/9">
+          <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover"
+          />
+      </div>
+      <div className="flex-1 flex flex-col justify-center items-start">
+        <h3 className="heading-article-card aka-text-subtitle-1 self-stretch">{title}</h3>
+        <span className="caption-reg font-[500] aka-text-subtitle-2 self-stretch">{date}</span>
+      </div>
     </div>
   )
 }

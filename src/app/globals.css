@@ -241,6 +241,13 @@
   font-weight: var(--fontweight-title);
   line-height: var(--text-lineheight-title);
 }
+.heading-article-card {
+  font-family: var(--font-rubik);
+  font-size: var(--text-body);
+  font-style: normal;
+  font-weight: "500";
+  line-height: var(--text-lineheight-body);
+}
 
 /* -------------------- Colors -------------------- */
 .aka-text-subtitle-1 {
