@@ -57,14 +57,21 @@ const Beranda = () => {
       {/* END OUR WORK */}
 
       {/* START ABOUTE US */}
-      <section className="g-white-100 pt-24 pr-[78px] pb-[78px] pl-[78px] mb-8">
-        <h2 className="font-plus-jakarta-sans text-[60px] font-[800] uppercase mb-12">About Us!</h2>
-        <div className="flex flex-col md:flex-row items-center md:space-x-8">
-          <img src="/assets/aboutus.jpg" alt="About Us Akasacara" className="w-full md:w-1/2" />
-          <p className="font-rubik text-3xl text-black">
-            Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.
-            Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films, 
-          </p>
+      <section className="py-section px-container flex flex-col items-start gap-xl self-stretch">
+        <div className="flex flex-col justify-end items-start self-stretch gap-xl">
+          <h1 className="headline-1 uppercase akasacara-title self-start">
+            About Us!
+          </h1>
+
+          <div className="flex flex-col md:flex-row justify-start items-start gap-12 self-stretch">
+            <img src="/assets/aboutus.jpg" alt="About Us Akasacara" className="w-full md:w-1/2" />
+            <p className="flex-1 text-justify sub-heading-reg">
+              Akasacara Film is a small independent multimedia company based in Yogyakarta, Indonesia. Akasacara Film has a role to provide creative innovation in multimedia.
+              <br/>
+              <br/>
+              Akasacara Film produced a film and distributed it to film festivals and cinemas. The creations which have been produced by Akasacara Film include narrative films, 
+            </p>
+          </div>
         </div>
       </section>
       {/* END ABOUTE US  */}

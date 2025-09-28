@@ -35,41 +35,42 @@ const ourWork = [
 
 const OurWork = () => {
   return (
-    <div className="bg-white text-black min-h-screen font-sans py-[100px]">
-        <h1 className="font-plus-jakarta-sans text-8xl text-center font-[800] uppercase mb-30">Our Works</h1>
+    <div className="bg-akasacara min-h-screen">
+      <div className="self strech py-section px-container">
+        <h1 className="title aka-text-title uppercase text-center">Our Works</h1>
+      </div>
         {/* KATEGORI */}
-        <div className="text-center mb-20">
-            <ul className="flex justify-center space-x-6 font-medium gap-1.5">
-                <div>
-                    <li className="kategoriourwork font-rubik text-3xl font-[500]">Film Production</li>
-                </div>
-                <div className="font-rubik text-3xl font-[500]">|</div>
-                <div>
-                    <li className="kategoriourwork font-rubik text-3xl font-[500]">Animation</li>
-                </div>
-                <div className="font-rubik text-3xl font-[500]">|</div>
-                <div>
-                    <li className="kategoriourwork font-rubik text-3xl font-[500]">Game</li>
-                </div>
-                <div className="font-rubik text-3xl font-[500]">|</div>
-                <div>
-                    <li className="kategoriourwork font-rubik text-3xl font-[500]">Fisik</li>
-                </div>
-            </ul>
+      <div className="text-center py-section px-container">
+        <div className="flex justify-center font-medium gap-xl">
+          <div className="kategoriourwork non-act-filter">
+            Film Production
+          </div>
+          <div className="font-rubik text-3xl font-[500] non-act-hyperlink">|</div>
+          <div className="kategoriourwork non-act-filter">
+            Animation
+          </div>
+          <div className="font-rubik text-3xl font-[500] non-act-hyperlink">|</div> 
+          <div className="kategoriourwork non-act-filter">
+            Game
+          </div>
+          <div className="font-rubik text-3xl font-[500] non-act-hyperlink">|</div>
+          <div className="kategoriourwork non-act-filter">
+            Fisik
+          </div>
         </div>
-
         {/* DAFTAR OUR WORKS */}
-        <section className="px-8 md:px-20 space-y-12">
-            {ourWork.map((item) => (
-                <OurWorkCard
-                    key={item.id}
-                    id={item.id}
-                    title={item.title}
-                    description={item.description}
-                    image={item.image}
-                />
+        <div className="flex flex-col gap-l mt-4xl">
+          {ourWork.map((item) => (
+            <OurWorkCard
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+            />
             ))}
-        </section>
+        </div>
+      </div>
     </div>
   );
 };

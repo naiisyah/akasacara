@@ -139,8 +139,8 @@
   --spacing-l: var(--container-spacing-l);
   --spacing-xl: var(--container-spacing-xl);
   --spacing-2xl: var(--container-spacing-2xl);
-  --spacing-3xl: var(--container-spacing-x3l);
-  --spacing-4xl: var(--container-spacing-xl4);
+  --spacing-3xl: var(--container-spacing-3xl);
+  --spacing-4xl: var(--container-spacing-4xl);
 }
 
 /* -------------------- Text styles -------------------- */
