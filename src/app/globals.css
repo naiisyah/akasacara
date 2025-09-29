@@ -4,6 +4,7 @@
   --vfx-bg: #0D0D0D;
   --akasacara-bg: #FDFDFD;
   --interactive-bg: #121212;
+  --Hyperlink-txt: #000;
 
   --fontweight-headline-1: 800;
   --fontweight-headline-2: 600;
@@ -12,6 +13,7 @@
   --fontweight-subheading-reg: 400;
   --fontweight-subheading-light: 300;
   --fontweight-body-reg: 400;
+  --fontweight-body-light: 300;
   --fontweight-button-main: 600;
   --fontweight-button-secondary: 500;
   --fontweight-filter: 500;
@@ -25,6 +27,7 @@
   --fontstyle-subheading-reg: normal;
   --fontstyle-subheading-light: normal;
   --fontstyle-body-reg: normal;
+  --fontstyle-body-light: normal;
   --fontstyle-button-main: italic;
   --fontstyle-button-secondary: italic;
   --fontstyle-act-filter: italic;
@@ -273,6 +276,14 @@
   font-style: var(--fontstyle-body-reg);
   font-weight: var(--fontweight-body-reg);
   line-height: var(--text-lineheight-body);
+}
+.body-light {
+  font-family: var(--font-rubik);
+  font-size: var(--text-body);
+  font-style: var(--fontstyle-body-light);
+  font-weight: var(--fontweight-body-light);
+  line-height: var(--text-lineheight-body);
+  letter-spacing: -0.056px;
 }
 .caption-reg {
   font-family: var(--font-rubik);

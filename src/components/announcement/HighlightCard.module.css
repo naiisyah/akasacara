@@ -1,0 +1,8 @@
+.judul {
+    color: var(--Hyperlink-txt, #000);
+    font-family: var(--font-plus-jakarta-sans);
+    font-size: var(--text-body);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--text-lineheight-body);
+}
