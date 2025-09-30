@@ -42,19 +42,19 @@ const OurWork = () => {
         {/* KATEGORI */}
       <div className="text-center py-section px-container">
         <div className="flex justify-center font-medium gap-xl">
-          <div className="kategoriourwork non-act-filter">
+          <div className="kategoriourwork non-act-filter non-act-hyperlink">
             Film Production
           </div>
-          <div className="font-rubik text-3xl font-[500] non-act-hyperlink">|</div>
-          <div className="kategoriourwork non-act-filter">
+          <div className="non-act-filter non-act-hyperlink">|</div>
+          <div className="kategoriourwork non-act-filter non-act-hyperlink">
             Animation
           </div>
-          <div className="font-rubik text-3xl font-[500] non-act-hyperlink">|</div> 
-          <div className="kategoriourwork non-act-filter">
+          <div className="non-act-filternon-act-hyperlink">|</div> 
+          <div className="kategoriourwork non-act-filter non-act-hyperlink">
             Game
           </div>
-          <div className="font-rubik text-3xl font-[500] non-act-hyperlink">|</div>
-          <div className="kategoriourwork non-act-filter">
+          <div className="non-act-filter non-act-hyperlink">|</div>
+          <div className="kategoriourwork non-act-filter non-act-hyperlink">
             Fisik
           </div>
         </div>
