@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import AnnouncementCard from "./AnnouncementCard";
+import AnnouncementCard from "./homepage/AnnouncementCard";
+import Link from "next/link";
 
 const announcements = [
   {
@@ -9,7 +10,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/setan_alas.png",
     link: "#",
   },
   {
@@ -17,7 +18,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/setan_alas2.png",
     link: "#",
   },
   {
@@ -25,7 +26,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/tengkorak.png",
     link: "#",
   },
   {
@@ -33,7 +34,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/setan_alas2.png",
     link: "#",
   },
   {
@@ -41,7 +42,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/tengkorak.png",
     link: "#",
   },
   {
@@ -49,7 +50,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/setan_alas2.png",
     link: "#",
   },
   {
@@ -57,7 +58,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/tengkorak.png",
     link: "#",
   },
   {
@@ -65,7 +66,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/setan_alas.png",
     link: "#",
   },
   {
@@ -73,7 +74,7 @@ const announcements = [
     title:
       "Menyakiti Laut dan Saatnya Penghakiman: Film Horor Darah Nyai Tayang Serempak 21 Agustus 2025",
     date: "21 Juli 2025",
-    image: "/placeholder.png",
+    image: "/assets/setan_alas2.png",
     link: "#",
   },
 ];
@@ -99,7 +100,10 @@ export default function Announcements() {
         <div className="flex flex-col items-start gap-l self-stretch">
           <div className="flex justify-between items-center self-stretch">
             <span className="headline-2 aka-text-subtitle-1">Latest update</span>
-            <div className="button-main uppercase akasacara-title">See all</div>
+            <Link href="/announcement" className="flex items-center gap-m">
+              <div className="button-main uppercase akasacara-title">See all</div>
+              <div className="button-main font-[800] not-italic akasacara-title">&gt;</div>
+            </Link>
           </div>
 
           <div className="flex flex-col gap-l">
